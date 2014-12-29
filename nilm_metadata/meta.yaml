@@ -1,0 +1,26 @@
+package:
+  name: nilm_metadata
+  version: 0.2
+
+source:
+  git_url: https://github.com/nilmtk/nilm_metadata.git
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pandas
+    - pyyaml
+
+  run:
+    - python
+    - pandas
+    - pyyaml
+
+test:
+  imports:
+    - nilm_metadata
+
+about:
+  home: https://readthedocs.org/projects/nilm-metadata/
+  summary: "NILM-Metadata is a framework for describing appliances, meters, measurements, buildings and datasets."

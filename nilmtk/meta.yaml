@@ -1,0 +1,35 @@
+package:
+  name: nilmtk
+  version: 0.2
+
+source:
+  git_url: https://github.com/nilmtk/nilmtk.git
+
+requirements:
+  build:
+    - python
+    - nilm_metadata
+
+  run:
+    - python
+    - numpy
+    - scipy
+    - ipython
+    - matplotlib
+    - pandas >=0.13
+    - cython ==0.19.1
+    - scikit-learn >=0.14
+    - numexpr
+    - mysql-python
+    - nilm_metadata
+    - networkx
+    - pytables
+
+test:
+  imports:
+    - nilmtk
+    - nilm_metadata
+
+about:
+  home: http://nilmtk.github.io/
+  summary: "NILMTK is an Open source Non-intrusive load monitoring toolkit."
