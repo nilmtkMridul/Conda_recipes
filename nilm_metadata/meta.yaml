@@ -3,7 +3,8 @@ package:
   version: 0.2
 
 source:
-  git_url: https://github.com/nilmtk/nilm_metadata.git
+  #git_url: https://github.com/nilmtk/nilm_metadata.git
+  path: /home/mridul/nilmtkProject/nilm_metadata/
 
 requirements:
   build:
@@ -17,9 +18,6 @@ requirements:
     - pandas
     - pyyaml
 
-test:
-  imports:
-    - nilm_metadata
 
 about:
   home: https://readthedocs.org/projects/nilm-metadata/
