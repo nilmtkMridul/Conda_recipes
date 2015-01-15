@@ -1,0 +1,23 @@
+package:
+  name: hmmlearn
+
+source:
+  git_url: https://github.com/hmmlearn/hmmlearn.git
+  # path: /home/mridul/nilmtkProject/hmmlearn/
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - cython
+    - numpy
+
+  run:
+    - python
+    - cython
+    - numpy
+
+
+about:
+  home: https://travis-ci.org/hmmlearn/hmmlearn
+  summary: "HMMlearn is a set of algorithm for learning and inference of Hidden Markov Models."

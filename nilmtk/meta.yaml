@@ -4,12 +4,12 @@ package:
 
 source:
   git_url: https://github.com/nilmtk/nilmtk.git
-  # git_tag: 0.3.alpha
+  # git_tag: 0.3.alpha ## Error in recognizing tag.
 
 requirements:
   build:
     - python
-    - nilm_metadata
+    - nilm_metadata # Local recipe
     - setuptools
 
   run:
@@ -32,11 +32,17 @@ requirements:
     - dateutil
     - pip
     - six
+    # Local recipes
+    - hmmlearn
+    - python-coveralls
+    # - graphviz
+
 
 test:
   imports:
     - nilmtk
     - nilm_metadata
+    - hmmlearn
 
 about:
   home: http://nilmtk.github.io/
