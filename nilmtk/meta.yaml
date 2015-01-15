@@ -1,14 +1,16 @@
 package:
   name: nilmtk
-  version: 0.2
+  version: 0.3.alpha
 
 source:
   git_url: https://github.com/nilmtk/nilmtk.git
+  # git_tag: 0.3.alpha
 
 requirements:
   build:
     - python
     - nilm_metadata
+    - setuptools
 
   run:
     - python
@@ -24,6 +26,12 @@ requirements:
     - nilm_metadata
     - networkx
     - pytables
+    - nose
+    - psycopg2
+    - coverage
+    - dateutil
+    - pip
+    - six
 
 test:
   imports:
