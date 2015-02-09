@@ -1,10 +1,10 @@
 package:
   name: nilmtk
-  version: 0.3.alpha
+  version: v0.3.alpha
 
 source:
+  git_tag: v0.3.alpha
   git_url: https://github.com/nilmtk/nilmtk.git
-  # git_tag: 0.3.alpha ## Error in recognizing tag.
 
 requirements:
   build:
@@ -35,14 +35,21 @@ requirements:
     # Local recipes
     - hmmlearn
     - python-coveralls
-    # - graphviz
+    - graphviz
+    - pygraphviz
+    - sh
 
 
 test:
+  commands:
+    - nosetests --with-coverage
   imports:
     - nilmtk
     - nilm_metadata
     - hmmlearn
+    #- graphviz
+    - pygraphviz
+    - sh
 
 about:
   home: http://nilmtk.github.io/
