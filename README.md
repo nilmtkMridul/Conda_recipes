@@ -1,4 +1,4 @@
-## Conda Recipes for NILMTK Installation
+# Conda Recipes for NILMTK Installation
 
 All conda recipes that a user will have to build before installing NILMTK through Conda
 

@@ -9,7 +9,9 @@ source:
 requirements:
   build:
     - python
-    - nilm_metadata # Local recipe
+    - pandas
+    - pyyaml
+    #- nilm_metadata # Local recipe
     - setuptools
 
   run:
@@ -18,12 +20,13 @@ requirements:
     - scipy
     - ipython
     - matplotlib
+    - pyyaml
     - pandas >=0.13
     - cython ==0.19.1
     - scikit-learn >=0.14
     - numexpr
     - mysql-python
-    - nilm_metadata
+    #- nilm_metadata
     - networkx
     - pytables
     - nose
@@ -44,8 +47,8 @@ test:
   commands:
     - nosetests --with-coverage
   imports:
-    - nilmtk
-    - nilm_metadata
+    #- nilmtk
+    #- nilm_metadata
     - hmmlearn
     #- graphviz
     - pygraphviz
